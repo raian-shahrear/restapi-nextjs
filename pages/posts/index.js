@@ -5,7 +5,7 @@ const Posts = ({ posts }) => {
   console.log(posts);
   return (
     <div>
-      <h1></h1>
+      <h1 className="text-2xl font-bold text-center mt-20">Total Post# {posts?.length}</h1>
       <div className="mx-96 my-10 grid grid-cols-3 gap-4">
         {
           posts?.map((post) => <AllPosts key={post?.id} post={post} />)

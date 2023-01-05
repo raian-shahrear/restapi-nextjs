@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const AllPosts = ({ post }) => {
   return (
@@ -7,10 +7,9 @@ const AllPosts = ({ post }) => {
         <h2 className="card-title mb-8">{post?.title}</h2>
         <div className="absolute bottom-0 left-0 w-full">
           <Link href={`posts/${post?.id}`}>
-          <button className="btn btn-primary w-full rounded-t-none">
-            See Details
-          </button>
-
+            <button className="btn btn-primary w-full rounded-t-none">
+              See Details
+            </button>
           </Link>
         </div>
       </div>
@@ -19,5 +18,4 @@ const AllPosts = ({ post }) => {
 };
 
 export default AllPosts;
-
 
