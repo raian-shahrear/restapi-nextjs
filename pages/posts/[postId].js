@@ -1,15 +1,21 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 const PostDetails = ({ post }) => {
+  const router = useRouter();
+  const handleRouter = () => {
+    router.push("/posts");
+  };
   return (
     <div className="card bg-primary text-primary-content my-56 mx-96">
       <div className="card-body">
-        <h2 className="card-title">#{post?.id}. {post?.title}</h2>
+        <h2 className="card-title">
+          #{post?.id}. {post?.title}
+        </h2>
         <p>{post?.body}</p>
         <div className="card-actions justify-center">
-          <Link href="/posts">
-            <button className="btn">Go to posts</button>
-          </Link>
+          <button onClick={handleRouter} className="btn">
+            Back to post
+          </button>
         </div>
       </div>
     </div>
