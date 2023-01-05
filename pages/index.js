@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+import Footer from "../components/AllPosts/Footer/Footer";
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +16,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        
+      <main className="xl:mx-96">
+        <Image src="/resources/programming.webp" width={1000} height={500} className="w-full h-[500px]"></Image>
+        <div className="bg-gray-900 py-20 flex justify-center gap-4">
+          <Link href="/" className="btn">Home</Link>
+          <Link href="/posts" className="btn btn-primary">Posts</Link>
+          <Link href="/comments" className="btn btn-accent">Comments</Link>
+        </div>
+        <Footer/>
       </main>
     </>
   );
