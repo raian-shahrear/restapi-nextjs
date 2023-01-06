@@ -1,37 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Exploring Next.js
 
-## Getting Started
+## Livesite: [http://localhost:3000](http://localhost:3000)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# restapi-nextjs" 
+## What is learned/implemented so far:
+### 1. Next.js is a framework of React.js which is created by Vercel.
+### 2. It provides default routing, built-in CSS, Server Side Rendering (SSR), TypeScript support as well as all other react dependencies and features.
+### 3. It is better for SEO because of SSR feature and component like <Head> that includes <meta> & <title> tags.
+### 4. SSG vs SSR: SSG (Static Site Generation) helps to pre-render a page at compile time, which means a user won't have to wait for loading the page whereas SSR (Server Side Rendering) helps to pre-render a page on the server which is then loaded as per client request and also makes the load speed faster. For data fetching, there are 3 different functions in Next.js which are only used in the Page: `getStaticProps`, `getStaticPaths` and `getServerSideProps`.
+### 5. For using default routing,
+###### i) To create a JS-file inside a folder of the Page and for nested page, create a new folder inside the folder.
+###### ii) To make a dynamic page, create a JS-file with squire brackets inside a folder of the Page, such as [dPage].js
+### 6. Page and Component both are used in Next.js
+### 7. Next.js app can be easily deployed to the Vercel.
