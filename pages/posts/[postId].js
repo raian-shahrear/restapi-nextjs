@@ -1,4 +1,7 @@
 import { useRouter } from "next/router";
+import Comments from "../../components/Comments/Comments";
+import Link from "next/link";
+
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -6,19 +9,27 @@ const PostDetails = ({ post }) => {
     router.push("/posts");
   };
   return (
-    <div className="card bg-primary text-primary-content my-56 mx-96">
-      <div className="card-body">
-        <h2 className="card-title">
-          #{post?.id}. {post?.title}
-        </h2>
-        <p>{post?.body}</p>
-        <div className="card-actions justify-center">
-          <button onClick={handleRouter} className="btn">
-            Back to post
-          </button>
+    <section>
+      <p className="text-center mt-20">
+        <Link href="/" className="text-primary text-lg font-bold underline transition-all duration-300 hover:no-underline hover:text-black">Home</Link>
+      </p>
+      <div className="card bg-primary text-primary-content mt-10 mb-20 mx-10 xl:mx-96">
+        <div className="card-body">
+          <h2 className="card-title capitalize">
+            Post#{post?.id}. {post?.title}
+          </h2>
+          <p className="mb-6">
+            <span className="font-semibold"></span> {post?.body}
+          </p>
+          <Comments postId={post?.id} />
+          <div className="card-actions justify-center">
+            <button onClick={handleRouter} className="btn">
+              Back to post
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

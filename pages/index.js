@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import Footer from "../components/AllPosts/Footer/Footer";
+import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 
 
@@ -18,10 +18,10 @@ export default function Home() {
       </Head>
       <main className="xl:mx-96">
         <Image src="/resources/programming.webp" width={1000} height={500} className="w-full h-[500px]"></Image>
-        <div className="bg-gray-900 py-20 flex justify-center gap-4">
+        <div className="bg-gray-900 py-28 flex justify-center gap-4">
           <Link href="/" className="btn">Home</Link>
           <Link href="/posts" className="btn btn-primary">Posts</Link>
-          <Link href="/comments" className="btn btn-accent">Comments</Link>
+          <Link href="/users" className="btn btn-accent">Users</Link>
         </div>
         <Footer/>
       </main>

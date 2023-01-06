@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>Copyright © 2023 - All right reserved by REST-API NEXT JS</p>
+        <p>Copyright © 2023 - All right reserved by <span className="font-bold">REST-API NEXT-JS</span></p>
       </div>
     </footer>
   );
