@@ -24,12 +24,14 @@ const PostDetails = ({ post }) => {
         </p>
         <div className="card bg-primary text-primary-content mt-10 mb-20 mx-10 xl:mx-96">
           <div className="card-body">
-            <h2 className="card-title capitalize">
-              Post#{post?.id}. {post?.title}
-            </h2>
-            <p className="mb-6">
-              <span className="font-semibold"></span> {post?.body}
-            </p>
+            <div>
+              <h2 className="card-title capitalize">
+                Post#{post?.id}. {post?.title}
+              </h2>
+              <p className="mb-6">
+                <span className="font-semibold"></span> {post?.body}
+              </p>
+            </div>
             <Comments postId={post?.id} />
             <div className="card-actions justify-center">
               <button onClick={handleRouter} className="btn">
