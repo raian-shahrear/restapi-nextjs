@@ -1,6 +1,6 @@
 # Exploring Next.js
 
-## Livesite: [http://localhost:3000](http://localhost:3000)
+## Live-site: [restapi-nextjs-explore.vercel.app](https://restapi-nextjs-explore.vercel.app/)
 
 ## What is learned/implemented so far:
 ### 1. Next.js is a framework of React.js which is created by Vercel.
